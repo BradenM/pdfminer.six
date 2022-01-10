@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Export type annotations from pypi package per PEP561 ([#679](https://github.com/pdfminer/pdfminer.six/pull/679))
 
 ### Fixed
+- Crash in `pdf2txt.py --boxes-flow=disabled` ([#682](https://github.com/pdfminer/pdfminer.six/pull/682))
 - Hande decompression error due to CRC checksum error ([#637](https://github.com/pdfminer/pdfminer.six/pull/637))
 - Regression (since 20191107) in `LTLayoutContainer.group_textboxes` that returned some text lines out of order ([#659](https://github.com/pdfminer/pdfminer.six/pull/659))
 - Crash in `pdf2txt.py --boxes-flow=disabled` ([#657](https://github.com/pdfminer/pdfminer.six/pull/657))
