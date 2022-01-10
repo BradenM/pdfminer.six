@@ -65,6 +65,9 @@ def extract_text(
                       "char_margin", "line_margin", "boxes_flow"):
             paramv = locals().get(param, None)
             if paramv is not None:
+                if param == "boxes_flow" and paramv == "disabled":
+                    # Layout analysis explicitly disabled; set to None.
+                    paramv = None
                 setattr(laparams, param, paramv)
     else:
         laparams = None
